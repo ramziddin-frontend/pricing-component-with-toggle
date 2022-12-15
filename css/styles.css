@@ -1,3 +1,11 @@
+:root {
+  --bg-color: #F7F7FE;
+  --white: #fff;
+  --main-color: #6D72DE;
+  --text-color: #4A4D60;
+  --lingt-text-color: #6E728E;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +25,16 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: var(--bg-color);
+  color: var(--lingt-text-color);
+  background-image: url('../img/bg-left.svg'),
+  url('../img/bg-ringt.svg');
+  background-repeat: no-repeat;
+  background-position: left -120px bottom -457px,
+  right -100px top -100px;
 }
 
 img {
@@ -72,9 +85,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1050px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
 }
