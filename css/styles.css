@@ -92,10 +92,145 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+/* BUTTON */
+.button  {
+  margin: 0;
+  padding: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  transition: background-color 0.4s ease,
+  color 0.4s ease;
+}
+
+.button-block  {
+  display: block;
+  width: 100%;
+}
+
+.button-primary {
+  background-color: var(--main-color);
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: var(--white);
+}
+
+.button-primary:hover  {
+  color: var(--main-color);
+  background-color: var(--white);
+  background-image: none;
+  border-color: var(--main-color);
+}
+
+.button-white {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+
+.button-white:hover {
+  color: var(--white);
+  background-color: transparent;
+  border-color: var(--white);
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* MAIN */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.pricing {
+  width: 100%;
+}
+
+.pricing-iner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-plan {
+  flex-grow: 1;
+  max-width: 350px;
+  padding: 32px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.pricing-plan-best {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #696EDD;
+  background-image: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.pricing-plan-best .pricing-plan-price {
+  color: var(--white);
+}
+
+.pricing-plan:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pricing-plan:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pricing-plan-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.pricing-plan-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  line-height:72px;
+  color: var(--text-color);
+  margin-bottom: 32px;
+}
+
+.pricing-plan-currency {
+  font-size: 40px;
+  margin-right: 8px;
+}
+
+.pricing-plan-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 32px;
+  border-top: 1px solid rgb(110, 114, 142, 0.25);
+}
+
+.pricing-plan-feature {
+  padding: 12px;
+  border-bottom: 1px solid rgb(110, 114, 142, 0.25);
 }
 
 @media
